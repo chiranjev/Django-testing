@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title class="bank-name-title">DjangoTest</title>
+
+  <link href="{% static 'DjangoTestApp/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="{% static 'DjangoTestApp/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body style="background-color: #F0F3F4; height: 100%;">
+  
+  <div class="navbar-fixed">
+    <nav role="navigation" class="blue darken-2">
+      <a href="#!" class="brand-logo center">AllinCall Blog</a>
+    </nav>
+  </div>
+
+  <script type="text/javascript" src="{% static 'DjangoTestApp/js/jquery.js' %}"></script>
+  
+<br><br><br>
+<div class="container">
+
+    {% block content %}
+    {% endblock %}
+</div>
+
+  <script type="text/javascript" src="{% static 'DjangoTestApp/js/materialize.js' %}"></script>
+  
+  <script type="text/javascript" src="{% static 'DjangoTestApp/js/init.js' %}"></script>
+  
+</body>
+</html>
+
+
+
+
+

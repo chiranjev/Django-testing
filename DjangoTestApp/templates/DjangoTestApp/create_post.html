@@ -1,0 +1,27 @@
+{% extends 'DjangoTestApp/base.html' %}
+{% block content %}
+{% load static %}
+
+<h4>
+  Create Your New Post
+</h4>
+
+<br><br><br>
+<h6>Title</h6>
+<input id="title" type="text">
+
+<br><br><br><br>
+<h6>Content</h6>
+<input id="content" type="text">
+
+<br><br><br><br>
+<h6>Author</h6>
+<input id="author" type="text">
+
+
+<br><br><br><br>
+<a href="#!" id="create_post_btn" class="btn blue">Publish Post</a>
+
+<br><br><br>
+  
+{% endblock %}
